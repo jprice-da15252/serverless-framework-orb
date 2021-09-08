@@ -15,8 +15,6 @@ integration_tests: &integration_tests
   ]
 orb_prep_jobs: &orb_prep_jobs
   [
-    orb-tools/lint,
-    orb-tools/shellcheck,
     orb-tools/pack
   ]
 # Pipeline parameters
