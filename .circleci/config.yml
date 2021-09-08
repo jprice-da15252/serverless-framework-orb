@@ -45,22 +45,22 @@ jobs:
       - aws-cli/setup
       - node/install-packages:
           app-dir: "~/project/example"
-      - run:
-          command: npm run test
-          working_directory: "~/project/example"
-      - serverless/setup:
-          provider: AWS
-          app-name: serverless-framework-orb
-          org-name: jprice-da15252
-      - run:
-          name: Local invoke add function
-          working_directory: "~/project/example"
-          command: |
-            serverless invoke local --function add --path 'sampleData/data.json'
-      - run:
-          working_directory: "~/project/example"
-          command: ls && serverless deploy -v
-          name: deploy
+      # - run:
+      #     command: npm run test
+      #     working_directory: "~/project/example"
+      # - serverless/setup:
+      #     provider: AWS
+      #     app-name: serverless-framework-orb
+      #     org-name: jprice-da15252
+      # - run:
+      #     name: Local invoke add function
+      #     working_directory: "~/project/example"
+      #     command: |
+      #       serverless invoke local --function add --path 'sampleData/data.json'
+      # - run:
+      #     working_directory: "~/project/example"
+      #     command: ls && serverless deploy -v
+      #     name: deploy
 
 workflows:
   # This `lint-pack_validate_publish-dev` workflow will run on any commit.
@@ -89,13 +89,13 @@ workflows:
   integration-tests_prod-release:
     when: << pipeline.parameters.run-integration-tests >>
     jobs:
-      - approve_for_testing:
-          type: approval
+      # - approve_for_testing:
+      #     type: approval
 
-      - integration-test-1:
-          context: serverless-framework-orb-testing
-          requires:
-            - approve_for_testing
+      # - integration-test-1:
+      #     context: serverless-framework-orb-testing
+      #     requires:
+      #       - approve_for_testing
 
       # publish a semver version of the orb. relies on
       # the commit subject containing the text "[semver:patch|minor|major|skip]"
@@ -109,7 +109,6 @@ workflows:
           add-pr-comment: false
           fail-if-semver-not-indicated: true
           publish-version-tag: false
-          requires: *integration_tests
           filters:
             branches:
               only: master
