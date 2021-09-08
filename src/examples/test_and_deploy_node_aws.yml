@@ -3,7 +3,7 @@ description: >
 usage:
   version: 2.1
   orbs:
-    serverless-framework: circleci/serverless-framework@x.y
+    serverless-framework: jprice-da15252/serverless-framework@x.y
     aws-cli: circleci/aws-cli@x.y
     node: circleci/node@x.y
   jobs:
