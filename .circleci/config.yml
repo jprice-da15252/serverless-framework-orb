@@ -65,8 +65,6 @@ workflows:
   lint_pack-validate_publish-dev:
     unless: << pipeline.parameters.run-integration-tests >>
     jobs:
-      - orb-tools/lint
-      - orb-tools/shellcheck
       - orb-tools/pack
       - orb-tools/publish-dev:
           orb-name: jprice-da15252/serverless-framework
