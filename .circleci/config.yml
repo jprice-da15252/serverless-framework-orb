@@ -51,7 +51,7 @@ jobs:
       - serverless/setup:
           provider: AWS
           app-name: serverless-framework-orb
-          org-name: circleci
+          org-name: jprice-da15252
       - run:
           name: Local invoke add function
           working_directory: "~/project/example"
