@@ -1,5 +1,5 @@
 # serverless-framework Orb
-[![CircleCI Build Status](https://circleci.com/gh/CircleCI-Public/serverless-framework-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/CircleCI-Public/serverless-framework-orb) [![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?url=https://badges.circleci.io/orb/circleci/serverless-framework)](https://circleci.com/orbs/registry/orb/circleci/serverless-framework) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/CircleCI-Public/serverless-framework-orb/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
+[![CircleCI Build Status](https://circleci.com/gh/jprice-da15252/serverless-framework-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/jprice-da15252/serverless-framework-orb) [![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?url=https://badges.circleci.io/orb/circleci/serverless-framework)](https://circleci.com/orbs/registry/orb/circleci/serverless-framework) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/jprice-da15252/serverless-framework-orb/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
 
 Use the Serverless Framework orb for CircleCI to easily deploy to your favorite cloud platform.
 
@@ -44,7 +44,7 @@ View your deployments at https://dashboard.serverless.com/
 
 ### How To Contribute
 
-We welcome [issues](https://github.com/CircleCI-Public/serverless-framework-orb/issues) to and [pull requests](https://github.com/CircleCI-Public/serverless-framework-orb/pulls) against this repository!
+We welcome [issues](https://github.com/jprice-da15252/serverless-framework-orb/issues) to and [pull requests](https://github.com/jprice-da15252/serverless-framework-orb/pulls) against this repository!
 
 To publish a new production version:
 * Create a PR to the `Alpha` branch with your changes. This will act as a "staging" branch.
